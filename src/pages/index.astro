@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "My awesome website";
 ---
 
 <html lang="en">
@@ -9,9 +9,10 @@
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>My Astro Website</title>
+        <title>{pageTitle}</title>
     </head>
     <body>
+        <h1>{pageTitle}</h1>
         <a href="/">首页</a>
         <a href="/about/">关于</a>
         <a href="/blog/">Blog</a>
